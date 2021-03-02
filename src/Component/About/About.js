@@ -1,4 +1,4 @@
-import {Button} from "bootstrap";
+import {Button} from "@material-ui/core";
 import React from "react";
 import "./About.css";
 const About = ({history}) => {
@@ -28,7 +28,13 @@ const About = ({history}) => {
           reprehenderit. Duis aute eu reprehenderit voluptate esse adipisicing
           reprehenderit.
         </p>
-        <Button variant="primary" onClick={() => history.goBack()}>
+
+        <Button
+          style={{backgroundColor: "#007bff"}}
+          variant="contained"
+          color="primary"
+          onClick={() => history.goBack()}
+        >
           Go back
         </Button>
       </div>
