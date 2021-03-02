@@ -1,0 +1,22 @@
+.drinklist {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3% 10%;
+  animation: flip-scale-down-diag-2 0.5s linear both;
+}
+
+.card {
+  margin: 2%;
+}
+
+@keyframes drinklist {
+  0% {
+    transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+  }
+  50% {
+    transform: scale(0.4) rotate3d(-1, 1, 0, -90deg);
+  }
+  100% {
+    transform: scale(1) rotate3d(-1, 1, 0, -180deg);
+  }
+}
